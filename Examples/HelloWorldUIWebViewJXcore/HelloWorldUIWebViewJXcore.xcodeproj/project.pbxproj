@@ -1,0 +1,536 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F2FAC8071B2CFE3C007A6636 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F2FAC8061B2CFE3C007A6636 /* main.m */; };
+		F2FAC80A1B2CFE3C007A6636 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = F2FAC8091B2CFE3C007A6636 /* AppDelegate.mm */; };
+		F2FAC80D1B2CFE3C007A6636 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = F2FAC80C1B2CFE3C007A6636 /* ViewController.mm */; };
+		F2FAC8101B2CFE3C007A6636 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2FAC80E1B2CFE3C007A6636 /* Main.storyboard */; };
+		F2FAC8121B2CFE3C007A6636 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2FAC8111B2CFE3C007A6636 /* Images.xcassets */; };
+		F2FAC8151B2CFE3C007A6636 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2FAC8131B2CFE3C007A6636 /* LaunchScreen.xib */; };
+		F2FAC8211B2CFE3C007A6636 /* HelloWorldUIWebViewJXcoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F2FAC8201B2CFE3C007A6636 /* HelloWorldUIWebViewJXcoreTests.m */; };
+		F2FAC8341B2CFE7A007A6636 /* libEmbeddedJXcoreEngineIOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F2FAC8311B2CFE63007A6636 /* libEmbeddedJXcoreEngineIOS.a */; };
+		F2FAC8361B2D0769007A6636 /* main.js in Resources */ = {isa = PBXBuildFile; fileRef = F2FAC8351B2D0769007A6636 /* main.js */; };
+		F2FACA941B2D1C09007A6636 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = F2FACA931B2D1C03007A6636 /* index.html */; };
+		F2FACA971B2D2CDA007A6636 /* main.css in Resources */ = {isa = PBXBuildFile; fileRef = F2FACA961B2D2CDA007A6636 /* main.css */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F2FAC81B1B2CFE3C007A6636 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F2FAC7F91B2CFE3C007A6636 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F2FAC8001B2CFE3C007A6636;
+			remoteInfo = HelloWorldUIWebViewJXcore;
+		};
+		F2FAC8301B2CFE63007A6636 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F2FAC82B1B2CFE63007A6636 /* EmbeddedJXcoreEngineIOS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F2FAC08E1B2CD8AA007A6636;
+			remoteInfo = EmbeddedJXcoreEngineIOS;
+		};
+		F2FAC8321B2CFE63007A6636 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F2FAC82B1B2CFE63007A6636 /* EmbeddedJXcoreEngineIOS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F2FAC0991B2CD8AA007A6636;
+			remoteInfo = EmbeddedJXcoreEngineIOSTests;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F2FAC8011B2CFE3C007A6636 /* HelloWorldUIWebViewJXcore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloWorldUIWebViewJXcore.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2FAC8051B2CFE3C007A6636 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2FAC8061B2CFE3C007A6636 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F2FAC8081B2CFE3C007A6636 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F2FAC8091B2CFE3C007A6636 /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
+		F2FAC80B1B2CFE3C007A6636 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F2FAC80C1B2CFE3C007A6636 /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
+		F2FAC80F1B2CFE3C007A6636 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F2FAC8111B2CFE3C007A6636 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F2FAC8141B2CFE3C007A6636 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		F2FAC81A1B2CFE3C007A6636 /* HelloWorldUIWebViewJXcoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloWorldUIWebViewJXcoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2FAC81F1B2CFE3C007A6636 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2FAC8201B2CFE3C007A6636 /* HelloWorldUIWebViewJXcoreTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloWorldUIWebViewJXcoreTests.m; sourceTree = "<group>"; };
+		F2FAC82B1B2CFE63007A6636 /* EmbeddedJXcoreEngineIOS.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = EmbeddedJXcoreEngineIOS.xcodeproj; path = ../../EmbeddedJXcoreEngineIOS.xcodeproj; sourceTree = "<group>"; };
+		F2FAC8351B2D0769007A6636 /* main.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = main.js; path = nodeapp/www/main.js; sourceTree = "<group>"; };
+		F2FACA801B2D08DC007A6636 /* nodeapp */ = {isa = PBXFileReference; lastKnownFileType = folder; path = nodeapp; sourceTree = "<group>"; };
+		F2FACA931B2D1C03007A6636 /* index.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = index.html; path = nodeapp/www/index.html; sourceTree = "<group>"; };
+		F2FACA961B2D2CDA007A6636 /* main.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; name = main.css; path = nodeapp/www/main.css; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F2FAC7FE1B2CFE3C007A6636 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2FAC8341B2CFE7A007A6636 /* libEmbeddedJXcoreEngineIOS.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2FAC8171B2CFE3C007A6636 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F2FAC7F81B2CFE3C007A6636 = {
+			isa = PBXGroup;
+			children = (
+				F2FACA961B2D2CDA007A6636 /* main.css */,
+				F2FACA931B2D1C03007A6636 /* index.html */,
+				F2FACA801B2D08DC007A6636 /* nodeapp */,
+				F2FAC8351B2D0769007A6636 /* main.js */,
+				F2FAC82A1B2CFE4E007A6636 /* Libraries */,
+				F2FAC8031B2CFE3C007A6636 /* HelloWorldUIWebViewJXcore */,
+				F2FAC81D1B2CFE3C007A6636 /* HelloWorldUIWebViewJXcoreTests */,
+				F2FAC8021B2CFE3C007A6636 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F2FAC8021B2CFE3C007A6636 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F2FAC8011B2CFE3C007A6636 /* HelloWorldUIWebViewJXcore.app */,
+				F2FAC81A1B2CFE3C007A6636 /* HelloWorldUIWebViewJXcoreTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F2FAC8031B2CFE3C007A6636 /* HelloWorldUIWebViewJXcore */ = {
+			isa = PBXGroup;
+			children = (
+				F2FAC8081B2CFE3C007A6636 /* AppDelegate.h */,
+				F2FAC8091B2CFE3C007A6636 /* AppDelegate.mm */,
+				F2FAC80B1B2CFE3C007A6636 /* ViewController.h */,
+				F2FAC80C1B2CFE3C007A6636 /* ViewController.mm */,
+				F2FAC80E1B2CFE3C007A6636 /* Main.storyboard */,
+				F2FAC8111B2CFE3C007A6636 /* Images.xcassets */,
+				F2FAC8131B2CFE3C007A6636 /* LaunchScreen.xib */,
+				F2FAC8041B2CFE3C007A6636 /* Supporting Files */,
+			);
+			path = HelloWorldUIWebViewJXcore;
+			sourceTree = "<group>";
+		};
+		F2FAC8041B2CFE3C007A6636 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F2FAC8051B2CFE3C007A6636 /* Info.plist */,
+				F2FAC8061B2CFE3C007A6636 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F2FAC81D1B2CFE3C007A6636 /* HelloWorldUIWebViewJXcoreTests */ = {
+			isa = PBXGroup;
+			children = (
+				F2FAC8201B2CFE3C007A6636 /* HelloWorldUIWebViewJXcoreTests.m */,
+				F2FAC81E1B2CFE3C007A6636 /* Supporting Files */,
+			);
+			path = HelloWorldUIWebViewJXcoreTests;
+			sourceTree = "<group>";
+		};
+		F2FAC81E1B2CFE3C007A6636 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F2FAC81F1B2CFE3C007A6636 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F2FAC82A1B2CFE4E007A6636 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				F2FAC82B1B2CFE63007A6636 /* EmbeddedJXcoreEngineIOS.xcodeproj */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		F2FAC82C1B2CFE63007A6636 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F2FAC8311B2CFE63007A6636 /* libEmbeddedJXcoreEngineIOS.a */,
+				F2FAC8331B2CFE63007A6636 /* EmbeddedJXcoreEngineIOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F2FAC8001B2CFE3C007A6636 /* HelloWorldUIWebViewJXcore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2FAC8241B2CFE3C007A6636 /* Build configuration list for PBXNativeTarget "HelloWorldUIWebViewJXcore" */;
+			buildPhases = (
+				F2FAC7FD1B2CFE3C007A6636 /* Sources */,
+				F2FAC7FE1B2CFE3C007A6636 /* Frameworks */,
+				F2FAC7FF1B2CFE3C007A6636 /* Resources */,
+				F2FAC8371B2D077F007A6636 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HelloWorldUIWebViewJXcore;
+			productName = HelloWorldUIWebViewJXcore;
+			productReference = F2FAC8011B2CFE3C007A6636 /* HelloWorldUIWebViewJXcore.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F2FAC8191B2CFE3C007A6636 /* HelloWorldUIWebViewJXcoreTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2FAC8271B2CFE3C007A6636 /* Build configuration list for PBXNativeTarget "HelloWorldUIWebViewJXcoreTests" */;
+			buildPhases = (
+				F2FAC8161B2CFE3C007A6636 /* Sources */,
+				F2FAC8171B2CFE3C007A6636 /* Frameworks */,
+				F2FAC8181B2CFE3C007A6636 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F2FAC81C1B2CFE3C007A6636 /* PBXTargetDependency */,
+			);
+			name = HelloWorldUIWebViewJXcoreTests;
+			productName = HelloWorldUIWebViewJXcoreTests;
+			productReference = F2FAC81A1B2CFE3C007A6636 /* HelloWorldUIWebViewJXcoreTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F2FAC7F91B2CFE3C007A6636 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = shailesh;
+				TargetAttributes = {
+					F2FAC8001B2CFE3C007A6636 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					F2FAC8191B2CFE3C007A6636 = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = F2FAC8001B2CFE3C007A6636;
+					};
+				};
+			};
+			buildConfigurationList = F2FAC7FC1B2CFE3C007A6636 /* Build configuration list for PBXProject "HelloWorldUIWebViewJXcore" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F2FAC7F81B2CFE3C007A6636;
+			productRefGroup = F2FAC8021B2CFE3C007A6636 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = F2FAC82C1B2CFE63007A6636 /* Products */;
+					ProjectRef = F2FAC82B1B2CFE63007A6636 /* EmbeddedJXcoreEngineIOS.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				F2FAC8001B2CFE3C007A6636 /* HelloWorldUIWebViewJXcore */,
+				F2FAC8191B2CFE3C007A6636 /* HelloWorldUIWebViewJXcoreTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		F2FAC8311B2CFE63007A6636 /* libEmbeddedJXcoreEngineIOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libEmbeddedJXcoreEngineIOS.a;
+			remoteRef = F2FAC8301B2CFE63007A6636 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F2FAC8331B2CFE63007A6636 /* EmbeddedJXcoreEngineIOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = EmbeddedJXcoreEngineIOSTests.xctest;
+			remoteRef = F2FAC8321B2CFE63007A6636 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F2FAC7FF1B2CFE3C007A6636 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2FACA941B2D1C09007A6636 /* index.html in Resources */,
+				F2FAC8361B2D0769007A6636 /* main.js in Resources */,
+				F2FACA971B2D2CDA007A6636 /* main.css in Resources */,
+				F2FAC8101B2CFE3C007A6636 /* Main.storyboard in Resources */,
+				F2FAC8151B2CFE3C007A6636 /* LaunchScreen.xib in Resources */,
+				F2FAC8121B2CFE3C007A6636 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2FAC8181B2CFE3C007A6636 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F2FAC8371B2D077F007A6636 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = nodeapp/bundler.sh;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F2FAC7FD1B2CFE3C007A6636 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2FAC80D1B2CFE3C007A6636 /* ViewController.mm in Sources */,
+				F2FAC80A1B2CFE3C007A6636 /* AppDelegate.mm in Sources */,
+				F2FAC8071B2CFE3C007A6636 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2FAC8161B2CFE3C007A6636 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2FAC8211B2CFE3C007A6636 /* HelloWorldUIWebViewJXcoreTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F2FAC81C1B2CFE3C007A6636 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F2FAC8001B2CFE3C007A6636 /* HelloWorldUIWebViewJXcore */;
+			targetProxy = F2FAC81B1B2CFE3C007A6636 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F2FAC80E1B2CFE3C007A6636 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F2FAC80F1B2CFE3C007A6636 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F2FAC8131B2CFE3C007A6636 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F2FAC8141B2CFE3C007A6636 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F2FAC8221B2CFE3C007A6636 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F2FAC8231B2CFE3C007A6636 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F2FAC8251B2CFE3C007A6636 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LIBRARY = "libstdc++";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/shailesh/work/repos/EmbeddedJXcoreEngineIOS/EmbeddedJXcoreEngineIOS,
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
+				INFOPLIST_FILE = HelloWorldUIWebViewJXcore/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F2FAC8261B2CFE3C007A6636 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LIBRARY = "libstdc++";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/shailesh/work/repos/EmbeddedJXcoreEngineIOS/EmbeddedJXcoreEngineIOS,
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
+				INFOPLIST_FILE = HelloWorldUIWebViewJXcore/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F2FAC8281B2CFE3C007A6636 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HelloWorldUIWebViewJXcoreTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HelloWorldUIWebViewJXcore.app/HelloWorldUIWebViewJXcore";
+			};
+			name = Debug;
+		};
+		F2FAC8291B2CFE3C007A6636 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HelloWorldUIWebViewJXcoreTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HelloWorldUIWebViewJXcore.app/HelloWorldUIWebViewJXcore";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F2FAC7FC1B2CFE3C007A6636 /* Build configuration list for PBXProject "HelloWorldUIWebViewJXcore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2FAC8221B2CFE3C007A6636 /* Debug */,
+				F2FAC8231B2CFE3C007A6636 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2FAC8241B2CFE3C007A6636 /* Build configuration list for PBXNativeTarget "HelloWorldUIWebViewJXcore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2FAC8251B2CFE3C007A6636 /* Debug */,
+				F2FAC8261B2CFE3C007A6636 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2FAC8271B2CFE3C007A6636 /* Build configuration list for PBXNativeTarget "HelloWorldUIWebViewJXcoreTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2FAC8281B2CFE3C007A6636 /* Debug */,
+				F2FAC8291B2CFE3C007A6636 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F2FAC7F91B2CFE3C007A6636 /* Project object */;
+}
