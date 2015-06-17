@@ -35,6 +35,7 @@ void callback(JXResult *results, int argc) {
 }
 
 @implementation EmbeddedJXcoreEngineIOS
+@synthesize delegate;
 -(void)runEngineInSeparateThread:(NSDictionary*) args{
   NSFileManager *fileManager = [NSFileManager defaultManager];
   NSData *mainFileData =  [fileManager contentsAtPath:[args objectForKey:@"mainFilePath"]];
@@ -45,7 +46,7 @@ void callback(JXResult *results, int argc) {
   NSString   *homeFolder = [args objectForKey:@"homeFolder"];
   const char* path = [homeFolder UTF8String];
   NSLog(@"%s", path);
-
+  
   // Call JX_Initialize only once per app
   
   JX_Initialize(path, callback);
@@ -60,10 +61,16 @@ void callback(JXResult *results, int argc) {
   
   
   // define the entry file contents
-  JX_DefineMainFile((char*)byteData);
+  //JX_DefineMainFile((char*)byteData);
+  JX_DefineMainFile("require('main.jx')");
   
   
   JX_StartEngine();
+  dispatch_async(dispatch_get_main_queue(), ^{
+    if (self.delegate && [self.delegate respondsToSelector:@selector(embeddedJXcoreEngineIOSDidStart)]) {
+      [self.delegate embeddedJXcoreEngineIOSDidStart];
+    }
+  });
   
   // loop for possible IO
   // or JX_Loop() without usleep / while
@@ -85,6 +92,9 @@ void callback(JXResult *results, int argc) {
 
 
 -(void) stopEngine{
+  if (self.delegate && [self.delegate respondsToSelector:@selector(embeddedJXcoreEngineIOSWillStop)]) {
+    [self.delegate embeddedJXcoreEngineIOSWillStop];
+  }
   JX_StopEngine();
 }
 
