@@ -7,5 +7,5 @@ rest api on top of expressjs and nedb
 1. Open Xcode Project and Run
 2. Make sure you have [jx package manager installed](http://jxcore.com/package-manager/)
  
- ![](http://agenthunt.github.io/images/reactnativejxcoretodoapp.gif =336x640)
+ <img src="http://agenthunt.github.io/images/reactnativejxcoretodoapp.gif"  height="640"></img>
 
