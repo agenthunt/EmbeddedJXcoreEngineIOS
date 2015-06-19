@@ -7,11 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface ViewController : UIViewController
+#import "EmbeddedJXcoreEngineIOS.h"
+@interface ViewController : UIViewController <UIWebViewDelegate,EmbeddedJXcoreEngineIOSDelegate>
 
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
-
+@property (strong, nonatomic) EmbeddedJXcoreEngineIOS *embeddedJXcoreEngineIOS;
 
 
 @end

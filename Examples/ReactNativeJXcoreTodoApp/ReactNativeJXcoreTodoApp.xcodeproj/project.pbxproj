@@ -6,6 +6,20 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		F2B345B21B33E3F5002205F2 /* bundler */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = F2B345B31B33E3F5002205F2 /* Build configuration list for PBXAggregateTarget "bundler" */;
+			buildPhases = (
+				F2B345B61B33E41B002205F2 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = bundler;
+			productName = bundler;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		008F07F31AC5B25A0029DE68 /* main.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = 008F07F21AC5B25A0029DE68 /* main.jsbundle */; };
 		00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302AC1ABCB8CE00DB3ED1 /* libRCTActionSheet.a */; };
@@ -121,6 +135,13 @@
 			proxyType = 2;
 			remoteGlobalIDString = F2FAC0991B2CD8AA007A6636;
 			remoteInfo = EmbeddedJXcoreEngineIOSTests;
+		};
+		F2B345BA1B33E525002205F2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F2B345B21B33E3F5002205F2;
+			remoteInfo = bundler;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -376,11 +397,11 @@
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
-				F20AB9DE1B2E5B0C003D65DA /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				F2B345BB1B33E525002205F2 /* PBXTargetDependency */,
 			);
 			name = ReactNativeJXcoreTodoApp;
 			productName = "Hello World";
@@ -399,6 +420,9 @@
 					00E356ED1AD99517003FC87E = {
 						CreatedOnToolsVersion = 6.2;
 						TestTargetID = 13B07F861A680F5B00A75B9A;
+					};
+					F2B345B21B33E3F5002205F2 = {
+						CreatedOnToolsVersion = 6.3.2;
 					};
 				};
 			};
@@ -463,6 +487,7 @@
 			targets = (
 				13B07F861A680F5B00A75B9A /* ReactNativeJXcoreTodoApp */,
 				00E356ED1AD99517003FC87E /* ReactNativeJXcoreTodoAppTests */,
+				F2B345B21B33E3F5002205F2 /* bundler */,
 			);
 		};
 /* End PBXProject section */
@@ -578,9 +603,9 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		F20AB9DE1B2E5B0C003D65DA /* ShellScript */ = {
+		F2B345B61B33E41B002205F2 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 12;
+			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
@@ -590,7 +615,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = $PROJECT_DIR/jxcoreapp/bundler.sh;
-			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -619,6 +643,11 @@
 			isa = PBXTargetDependency;
 			target = 13B07F861A680F5B00A75B9A /* ReactNativeJXcoreTodoApp */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
+		};
+		F2B345BB1B33E525002205F2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F2B345B21B33E3F5002205F2 /* bundler */;
+			targetProxy = F2B345BA1B33E525002205F2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -795,6 +824,20 @@
 			};
 			name = Release;
 		};
+		F2B345B41B33E3F5002205F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F2B345B51B33E3F5002205F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -824,6 +867,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		F2B345B31B33E3F5002205F2 /* Build configuration list for PBXAggregateTarget "bundler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2B345B41B33E3F5002205F2 /* Debug */,
+				F2B345B51B33E3F5002205F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

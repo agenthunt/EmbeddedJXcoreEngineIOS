@@ -6,21 +6,42 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		F2B345BF1B33E5A3002205F2 /* bundler */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = F2B345C01B33E5A3002205F2 /* Build configuration list for PBXAggregateTarget "bundler" */;
+			buildPhases = (
+				F2B345C31B33E5A8002205F2 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = bundler;
+			productName = bundler;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
+		F2B345971B33D4D8002205F2 /* main.jx in Resources */ = {isa = PBXBuildFile; fileRef = F2B345961B33D4D8002205F2 /* main.jx */; };
+		F2B345981B33D855002205F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2FAC80E1B2CFE3C007A6636 /* Main.storyboard */; };
+		F2B345991B33D85B002205F2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2FAC8131B2CFE3C007A6636 /* LaunchScreen.xib */; };
 		F2FAC8071B2CFE3C007A6636 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F2FAC8061B2CFE3C007A6636 /* main.m */; };
 		F2FAC80A1B2CFE3C007A6636 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = F2FAC8091B2CFE3C007A6636 /* AppDelegate.mm */; };
 		F2FAC80D1B2CFE3C007A6636 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = F2FAC80C1B2CFE3C007A6636 /* ViewController.mm */; };
-		F2FAC8101B2CFE3C007A6636 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2FAC80E1B2CFE3C007A6636 /* Main.storyboard */; };
 		F2FAC8121B2CFE3C007A6636 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2FAC8111B2CFE3C007A6636 /* Images.xcassets */; };
-		F2FAC8151B2CFE3C007A6636 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2FAC8131B2CFE3C007A6636 /* LaunchScreen.xib */; };
 		F2FAC8211B2CFE3C007A6636 /* HelloWorldUIWebViewJXcoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F2FAC8201B2CFE3C007A6636 /* HelloWorldUIWebViewJXcoreTests.m */; };
 		F2FAC8341B2CFE7A007A6636 /* libEmbeddedJXcoreEngineIOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F2FAC8311B2CFE63007A6636 /* libEmbeddedJXcoreEngineIOS.a */; };
-		F2FAC8361B2D0769007A6636 /* main.js in Resources */ = {isa = PBXBuildFile; fileRef = F2FAC8351B2D0769007A6636 /* main.js */; };
 		F2FACA941B2D1C09007A6636 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = F2FACA931B2D1C03007A6636 /* index.html */; };
 		F2FACA971B2D2CDA007A6636 /* main.css in Resources */ = {isa = PBXBuildFile; fileRef = F2FACA961B2D2CDA007A6636 /* main.css */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		F2B345C41B33E5C5002205F2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F2FAC7F91B2CFE3C007A6636 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F2B345BF1B33E5A3002205F2;
+			remoteInfo = bundler;
+		};
 		F2FAC81B1B2CFE3C007A6636 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F2FAC7F91B2CFE3C007A6636 /* Project object */;
@@ -45,6 +66,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F2B345961B33D4D8002205F2 /* main.jx */ = {isa = PBXFileReference; lastKnownFileType = file; name = main.jx; path = nodeapp/www/main.jx; sourceTree = "<group>"; };
 		F2FAC8011B2CFE3C007A6636 /* HelloWorldUIWebViewJXcore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloWorldUIWebViewJXcore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2FAC8051B2CFE3C007A6636 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F2FAC8061B2CFE3C007A6636 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -87,6 +109,7 @@
 		F2FAC7F81B2CFE3C007A6636 = {
 			isa = PBXGroup;
 			children = (
+				F2B345961B33D4D8002205F2 /* main.jx */,
 				F2FACA961B2D2CDA007A6636 /* main.css */,
 				F2FACA931B2D1C03007A6636 /* index.html */,
 				F2FACA801B2D08DC007A6636 /* nodeapp */,
@@ -175,11 +198,11 @@
 				F2FAC7FD1B2CFE3C007A6636 /* Sources */,
 				F2FAC7FE1B2CFE3C007A6636 /* Frameworks */,
 				F2FAC7FF1B2CFE3C007A6636 /* Resources */,
-				F2FAC8371B2D077F007A6636 /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				F2B345C51B33E5C5002205F2 /* PBXTargetDependency */,
 			);
 			name = HelloWorldUIWebViewJXcore;
 			productName = HelloWorldUIWebViewJXcore;
@@ -213,6 +236,9 @@
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = shailesh;
 				TargetAttributes = {
+					F2B345BF1B33E5A3002205F2 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
 					F2FAC8001B2CFE3C007A6636 = {
 						CreatedOnToolsVersion = 6.3.2;
 					};
@@ -243,6 +269,7 @@
 			targets = (
 				F2FAC8001B2CFE3C007A6636 /* HelloWorldUIWebViewJXcore */,
 				F2FAC8191B2CFE3C007A6636 /* HelloWorldUIWebViewJXcoreTests */,
+				F2B345BF1B33E5A3002205F2 /* bundler */,
 			);
 		};
 /* End PBXProject section */
@@ -269,11 +296,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2B345991B33D85B002205F2 /* LaunchScreen.xib in Resources */,
+				F2B345981B33D855002205F2 /* Main.storyboard in Resources */,
+				F2B345971B33D4D8002205F2 /* main.jx in Resources */,
 				F2FACA941B2D1C09007A6636 /* index.html in Resources */,
-				F2FAC8361B2D0769007A6636 /* main.js in Resources */,
 				F2FACA971B2D2CDA007A6636 /* main.css in Resources */,
-				F2FAC8101B2CFE3C007A6636 /* Main.storyboard in Resources */,
-				F2FAC8151B2CFE3C007A6636 /* LaunchScreen.xib in Resources */,
 				F2FAC8121B2CFE3C007A6636 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -288,7 +315,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		F2FAC8371B2D077F007A6636 /* ShellScript */ = {
+		F2B345C31B33E5A8002205F2 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -325,6 +352,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		F2B345C51B33E5C5002205F2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F2B345BF1B33E5A3002205F2 /* bundler */;
+			targetProxy = F2B345C41B33E5C5002205F2 /* PBXContainerItemProxy */;
+		};
 		F2FAC81C1B2CFE3C007A6636 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = F2FAC8001B2CFE3C007A6636 /* HelloWorldUIWebViewJXcore */;
@@ -352,6 +384,20 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		F2B345C11B33E5A3002205F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F2B345C21B33E5A3002205F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		F2FAC8221B2CFE3C007A6636 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -503,6 +549,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		F2B345C01B33E5A3002205F2 /* Build configuration list for PBXAggregateTarget "bundler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2B345C11B33E5A3002205F2 /* Debug */,
+				F2B345C21B33E5A3002205F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		F2FAC7FC1B2CFE3C007A6636 /* Build configuration list for PBXProject "HelloWorldUIWebViewJXcore" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

@@ -7,21 +7,19 @@
 //
 
 #import "AppDelegate.h"
-#import "EmbeddedJXcoreEngineIOS.h"
+
 @interface AppDelegate ()
 
 @end
 
 @implementation AppDelegate
-EmbeddedJXcoreEngineIOS *embeddedJXcoreEngineIOS;
+
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
   // Override point for customization after application launch.
-  NSBundle *mainBundle = [NSBundle mainBundle];
-  NSString *mainFilePath = [mainBundle pathForResource:@"main" ofType:@"js"];
-  embeddedJXcoreEngineIOS =  [[EmbeddedJXcoreEngineIOS alloc] init];
-  [embeddedJXcoreEngineIOS startEngine:mainFilePath homeFolder:[mainBundle bundlePath]];
-  return YES;
+
+  
+    return YES;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
@@ -44,7 +42,9 @@ EmbeddedJXcoreEngineIOS *embeddedJXcoreEngineIOS;
 
 - (void)applicationWillTerminate:(UIApplication *)application {
   // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
-  [embeddedJXcoreEngineIOS stopEngine];
+
 }
+
+
 
 @end
