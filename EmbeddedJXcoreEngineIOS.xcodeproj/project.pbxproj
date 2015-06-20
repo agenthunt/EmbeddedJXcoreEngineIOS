@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F2FAC0921B2CD8AA007A6636 /* EmbeddedJXcoreEngineIOS.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F2FAC0911B2CD8AA007A6636 /* EmbeddedJXcoreEngineIOS.h */; };
-		F2FAC0941B2CD8AA007A6636 /* EmbeddedJXcoreEngineIOS.mm in Sources */ = {isa = PBXBuildFile; fileRef = F2FAC0931B2CD8AA007A6636 /* EmbeddedJXcoreEngineIOS.mm */; };
+		F2FAC0941B2CD8AA007A6636 /* EmbeddedJXcoreEngineIOS.m in Sources */ = {isa = PBXBuildFile; fileRef = F2FAC0931B2CD8AA007A6636 /* EmbeddedJXcoreEngineIOS.m */; };
 		F2FAC09A1B2CD8AA007A6636 /* libEmbeddedJXcoreEngineIOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F2FAC08E1B2CD8AA007A6636 /* libEmbeddedJXcoreEngineIOS.a */; };
 		F2FAC0B11B2CD9C5007A6636 /* libcares.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F2FAC0A91B2CD9C5007A6636 /* libcares.a */; };
 		F2FAC0B21B2CD9C5007A6636 /* libchrome_zlib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F2FAC0AA1B2CD9C5007A6636 /* libchrome_zlib.a */; };
@@ -46,7 +46,7 @@
 /* Begin PBXFileReference section */
 		F2FAC08E1B2CD8AA007A6636 /* libEmbeddedJXcoreEngineIOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libEmbeddedJXcoreEngineIOS.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2FAC0911B2CD8AA007A6636 /* EmbeddedJXcoreEngineIOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EmbeddedJXcoreEngineIOS.h; sourceTree = "<group>"; };
-		F2FAC0931B2CD8AA007A6636 /* EmbeddedJXcoreEngineIOS.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = EmbeddedJXcoreEngineIOS.mm; sourceTree = "<group>"; };
+		F2FAC0931B2CD8AA007A6636 /* EmbeddedJXcoreEngineIOS.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EmbeddedJXcoreEngineIOS.m; sourceTree = "<group>"; };
 		F2FAC0991B2CD8AA007A6636 /* EmbeddedJXcoreEngineIOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EmbeddedJXcoreEngineIOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2FAC09F1B2CD8AA007A6636 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F2FAC0A81B2CD94B007A6636 /* jxcore */ = {isa = PBXFileReference; lastKnownFileType = folder; path = jxcore; sourceTree = "<group>"; };
@@ -118,7 +118,7 @@
 			children = (
 				F2FAC0A81B2CD94B007A6636 /* jxcore */,
 				F2FAC0911B2CD8AA007A6636 /* EmbeddedJXcoreEngineIOS.h */,
-				F2FAC0931B2CD8AA007A6636 /* EmbeddedJXcoreEngineIOS.mm */,
+				F2FAC0931B2CD8AA007A6636 /* EmbeddedJXcoreEngineIOS.m */,
 			);
 			path = EmbeddedJXcoreEngineIOS;
 			sourceTree = "<group>";
@@ -227,7 +227,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F2FAC0941B2CD8AA007A6636 /* EmbeddedJXcoreEngineIOS.mm in Sources */,
+				F2FAC0941B2CD8AA007A6636 /* EmbeddedJXcoreEngineIOS.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

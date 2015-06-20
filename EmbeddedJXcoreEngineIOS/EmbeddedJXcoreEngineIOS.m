@@ -11,6 +11,14 @@
 #include <stdlib.h>
 #include <string.h>
 
+// ugly but takes care of XCODE 6 i386 compile bug
+size_t fwrite$UNIX2003(const void *a, size_t b, size_t c, FILE *d) {
+  return fwrite(a, b, c, d);
+}
+char *strerror$UNIX2003(int errnum) { return strerror(errnum); }
+time_t mktime$UNIX2003(struct tm *a) { return mktime(a); }
+double strtod$UNIX2003(const char *a, char **b) { return strtod(a, b); }
+void fputs$UNIX2003(const char *restrict c, FILE *restrict f) { fputs(c, f); }
 
 #if defined(_MSC_VER)
 // Sleep time for Windows is 1 ms while it's 1 ns for POSIX

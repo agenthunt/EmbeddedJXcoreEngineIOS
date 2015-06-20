@@ -875,6 +875,7 @@
 				F2B345B51B33E3F5002205F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
